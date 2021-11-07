@@ -1,0 +1,192 @@
+body{
+    font-family: 'Montserrat', sans-serif;;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: 
+    "pageName Info Info Info Account"
+    "webPersonals front front front nav"
+    "webPersonals first first firstImg nav"
+    "webPersonals secondImg second second nav"
+    "webPersonals third third thirdImg nav"
+    "webPersonals slogan blog MNTN nav"
+    ;
+    grid-template-rows: 144px 811px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 307px 1fr 1fr 1fr 307px;
+}
+h4{
+    font-size: large;
+    color: rgb(126, 103, 1);
+}
+h3{
+    font-size: medium;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    color: rgb(126, 103, 1);
+    margin-left: 100px;
+    position: relative;
+}
+h3::before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: rgb(126, 103, 1);
+    position: absolute;
+    left: -100px;
+    top: 8px;
+}
+h2{
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.name{
+    grid-area: pageName;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: x-large;
+}
+.pageInfo{
+    grid-area: Info;
+    text-align: center;
+    padding-top: 25px;
+}
+.acc{
+    grid-area: Account;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 25px;
+    position: relative;
+}
+.accImg{
+    position: absolute;
+    right: 90px;
+    top: 22px;
+}
+.personals{
+    grid-area: webPersonals;
+    padding-left: 20px;
+    padding-top: 22px;
+    writing-mode: vertical-lr;
+}
+.frontPage{
+    grid-area: front;
+    text-align: left;
+    padding-left: 180px;
+    font-size: xx-large;
+    position: relative;
+}
+.downArrow{
+    position: absolute;
+    top: 278px;
+    left: 280px;
+}
+.nav{
+    grid-area: nav;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 20px;
+}
+.firstStage{
+    grid-area: first;
+    padding-left: 200px;
+    padding-top: 100px;
+    color: rgb(211, 210, 208);
+    position: relative;
+}
+.firstArrow{
+    position: absolute;
+    bottom: 136px;
+    left: 290px;
+}
+.firstImage{
+    grid-area: firstImg;
+}
+.firstStageBackground{
+    position: absolute;
+    top: -200px;
+    left: 100px;
+    z-index: -1;
+    font-size: 200px;
+    color: rgba(44, 43, 90, 0.281);
+}
+.secondStage{
+    grid-area: second;
+    padding-left: 200px;
+    padding-top: 200px;
+    color: rgb(211, 210, 208);
+    position: relative;
+}
+.secondArrow{
+    position: absolute;
+    bottom: 36px;
+    left: 290px;
+}
+.secondImage{
+    grid-area: secondImg;
+    text-align: right;
+    padding-top: 100px;
+}
+.secondStageBackground{
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    z-index: -1;
+    font-size: 200px;
+    color: rgba(44, 43, 90, 0.281);
+}
+.thirdStage{
+    grid-area: third;
+    padding-left: 200px;
+    padding-top: 200px;
+    color: rgb(211, 210, 208);
+    position: relative;
+}
+.thirdArrow{
+    position: absolute;
+    bottom: 36px;
+    left: 290px;
+}
+.thirdImage{
+    grid-area: thirdImg;
+    padding-top: 100px;
+}
+.thirdStageBackground{
+    position: absolute;
+    top: -90px;
+    left: 100px;
+    z-index: -1;
+    font-size: 200px;
+    color: rgba(44, 43, 90, 0.281);
+}
+.slogan{
+    grid-area: slogan;
+    padding-top: 150px;
+    padding-left: 50px;
+    color: rgb(211, 210, 208);
+}
+.moreBlog{
+    grid-area: blog;
+    padding-top: 150px;
+    padding-left: 250px;
+    line-height: 30px;
+    color: rgb(211, 210, 208);
+}
+.moreMNTN{
+    grid-area: MNTN;
+    padding-top: 150px;
+    padding-left: 250px;
+    line-height: 30px;
+    color: rgb(211, 210, 208);
+}
+.readMore{
+    color: rgb(126, 103, 1);
+}
+#copyright{
+    padding-top: 100px;
+    color: rgb(114, 114, 114);
+}
+#scrollDown{
+    font-size: medium;
+}
