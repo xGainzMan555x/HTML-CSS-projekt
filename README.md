@@ -1,3 +1,3 @@
 # HTML-CSS-projekt
 
-Likovni nije bila moja najjaca strana.
+Likovni nije bio moj najjbolji predmet.
