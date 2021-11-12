@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;;
+    height: 100vh;
 }
 h4{
     font-size: large;
@@ -29,6 +30,8 @@ h2{
     margin-bottom: 5px;
 }
 .pageBackground{
+    height: 100%;
+    width: 100%;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,8 +44,8 @@ h2{
     "webPersonals third third thirdImg nav"
     "webPersonals slogan blog MNTN nav"
     ;
-    grid-template-rows: 144px 811px 1fr 1fr 1fr 1fr;
-    grid-template-columns: 307px 1fr 1fr 1fr 307px;
+    grid-template-rows: 144px 811px 481px 581px 581px 423.867px;
+    grid-template-columns: 307px 424.333px 424.333px 424.333px 307px;
 }
 .name{
     grid-area: pageName;
