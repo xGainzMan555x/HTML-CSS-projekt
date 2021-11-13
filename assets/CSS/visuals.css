@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;;
     height: 100vh;
+    width: 100%;
 }
 h4{
     font-size: large;
@@ -44,8 +45,8 @@ h2{
     "webPersonals third third thirdImg nav"
     "webPersonals slogan blog MNTN nav"
     ;
-    grid-template-rows: 144px 811px 481px 581px 581px 423.867px;
-    grid-template-columns: 307px 424.333px 424.333px 424.333px 307px;
+    grid-template-rows: 144px 811px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 15.9% 22.1% 22.1% 22.1% 15.9%;
 }
 .name{
     grid-area: pageName;
@@ -103,7 +104,7 @@ h2{
 }
 .firstArrow{
     position: absolute;
-    bottom: 136px;
+    bottom: 2.5%;
     left: 290px;
 }
 .firstImage{
@@ -126,7 +127,7 @@ h2{
 }
 .secondArrow{
     position: absolute;
-    bottom: 36px;
+    bottom: 2.5%;
     left: 290px;
 }
 .secondImage{
@@ -151,7 +152,7 @@ h2{
 }
 .thirdArrow{
     position: absolute;
-    bottom: 36px;
+    bottom: 2.5%;
     left: 290px;
 }
 .thirdImage{
