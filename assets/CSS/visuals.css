@@ -2,6 +2,15 @@ body{
     font-family: 'Montserrat', sans-serif;;
     height: 100vh;
     width: 100%;
+    margin: 0;
+}
+a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(44, 44, 46);
 }
 h4{
     font-size: large;
@@ -31,44 +40,41 @@ h2{
     margin-bottom: 5px;
 }
 .pageBackground{
-    height: 100%;
     width: 100%;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     grid-template-areas: 
-    "pageName Info Info Info Account"
+    "header header header header header"
     "webPersonals front front front nav"
     "webPersonals first first firstImg nav"
     "webPersonals secondImg second second nav"
     "webPersonals third third thirdImg nav"
     "webPersonals slogan blog MNTN nav"
     ;
-    grid-template-rows: 144px 811px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 144px 811px 638.933px 638.933px 638.933px 638.933px;
     grid-template-columns: 15.9% 22.1% 22.1% 22.1% 15.9%;
 }
-.name{
-    grid-area: pageName;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-size: x-large;
-}
-.pageInfo{
-    grid-area: Info;
-    text-align: center;
-    padding-top: 25px;
-}
-.acc{
-    grid-area: Account;
-    text-align: right;
-    padding-right: 20px;
-    padding-top: 25px;
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 75px;
+    padding-left: 30px;
     position: relative;
+}
+.info li{
+    display: inline-block;
+}
+.info li:not(:last-child){
+    margin-right: 15px;
 }
 .accImg{
     position: absolute;
-    right: 90px;
+    right: 70px;
     top: 22px;
 }
 .personals{
@@ -92,8 +98,11 @@ h2{
 .nav{
     grid-area: nav;
     text-align: right;
-    line-height: 50px;
-    padding-right: 20px;
+    padding-top: 4px;
+}
+.nav li{
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 .firstStage{
     grid-area: first;
@@ -104,7 +113,7 @@ h2{
 }
 .firstArrow{
     position: absolute;
-    bottom: 2.5%;
+    bottom: 195px;
     left: 290px;
 }
 .firstImage{
@@ -127,7 +136,7 @@ h2{
 }
 .secondArrow{
     position: absolute;
-    bottom: 2.5%;
+    bottom: 95px;
     left: 290px;
 }
 .secondImage{
@@ -152,7 +161,7 @@ h2{
 }
 .thirdArrow{
     position: absolute;
-    bottom: 2.5%;
+    bottom: 95px;
     left: 290px;
 }
 .thirdImage{
@@ -173,22 +182,59 @@ h2{
     padding-left: 50px;
     color: rgb(211, 210, 208);
 }
+.slogan li{
+    list-style-type: none;
+}
 .moreBlog{
     grid-area: blog;
     padding-top: 150px;
     padding-left: 250px;
-    line-height: 30px;
     color: rgb(211, 210, 208);
+}
+.moreBlog li{
+    list-style-type: none;
+}
+.moreBlog li:not(:last-child){
+    margin-bottom: 10px;
+}
+.moreBlog a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(211, 210, 208);
+}
+.moreBlog a:hover{
+    color: black;
 }
 .moreMNTN{
     grid-area: MNTN;
     padding-top: 150px;
     padding-left: 250px;
-    line-height: 30px;
     color: rgb(211, 210, 208);
+}
+.moreMNTN li{
+    list-style-type: none;
+}
+.moreMNTN li:not(:last-child){
+    margin-bottom: 10px;
+}
+.moreMNTN a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(211, 210, 208);
+}
+.moreMNTN a:hover{
+    color: black;
 }
 .readMore{
     color: rgb(126, 103, 1);
+}
+.readMore a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(126, 103, 1);
+}
+.readMore a:hover{
+    color: rgb(214, 188, 71);
 }
 #copyright{
     padding-top: 100px;
@@ -196,4 +242,62 @@ h2{
 }
 #scrollDown{
     font-size: medium;
+}
+
+@media only screen and (max-width: 1314px) {
+    .pageBackground{
+        width: 100%;
+        background-image: url(../images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-areas: 
+        "header header header header header"
+        "webPersonals front front front nav"
+        "webPersonals first first firstImg nav"
+        "webPersonals secondImg second second nav"
+        "webPersonals third third thirdImg nav"
+        "webPersonals slogan blog MNTN nav"
+        ;
+        grid-template-rows: 50px 811px 700px 700px 700px 1fr;
+        grid-template-columns: 15.9% 22.1% 22.1% 22.1% 15.9%;
+    }
+    .header{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .downArrow{
+        top: 355px;
+    }
+    .accImg{
+        top: 7px;
+    }
+    .firstStage{
+        padding-top: 160px;
+    }
+    .firstArrow{
+        bottom: 46px;
+    }
+    .secondStage{
+        padding-top: 80px;
+    }
+    .secondStageBackground{
+        top: -225px;
+    }
+    .secondArrow{
+        bottom: 73px;
+    }
+    .thirdStage{
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .thirdStageBackground{
+        top: -200px;
+        left: 10px;
+    }
+    .thirdArrow{
+        bottom: 75px;
+        left: 190px;
+    }
 }
