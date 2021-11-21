@@ -7,6 +7,8 @@ Added:
 
 •linkovi
 
+•Trebala bi raditi na ekrane od ~15.6"
+
 To-do:
 
-•zapravo napraviti da stranica bude 100% responzivna. Za sad je samo grid i background responzivno.
+•zapravo napraviti da stranica bude 100% responzivna
