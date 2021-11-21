@@ -244,7 +244,7 @@ h2{
     font-size: medium;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1519.2px) {
     .pageBackground{
         width: 100%;
         background-image: url(../images/background.jpg);
@@ -270,7 +270,7 @@ h2{
         right: 90px;
     }
     .downArrow{
-        top: 355px;
+        top: 277px;
     }
     .firstStage{
         padding-top: 150px;
@@ -311,7 +311,7 @@ h2{
         padding-right: 30px;
     }
     .thirdArrow{
-        bottom: 0;
+        bottom: 72px;
         left: 240px;
     }
     .thirdStageBackground{
