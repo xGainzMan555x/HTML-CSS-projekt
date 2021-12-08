@@ -1,337 +1,140 @@
 body{
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Gilroy', sans-serif;
     height: 100vh;
     width: 100%;
     margin: 0;
 }
-a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: black;
+div{
+    margin: 0;
 }
-a:hover{
-    color: rgb(44, 44, 46);
+p{
+    margin: 0;
 }
-h4{
-    font-size: large;
-    color: rgb(126, 103, 1);
-}
-h3{
-    font-size: medium;
-    word-spacing: 3px;
-    letter-spacing: 2px;
-    color: rgb(126, 103, 1);
-    margin-left: 100px;
+header{
     position: relative;
-}
-h3::before{
-    content: "";
-    display: block;
-    width: 70px;
-    height: 2px;
-    background: rgb(126, 103, 1);
-    position: absolute;
-    left: -100px;
-    top: 8px;
-}
-h2{
-    font-size: 60px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.pageBackground{
-    width: 100%;
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-areas: 
-    "header header header header header"
-    "webPersonals front front front nav"
-    "webPersonals first first firstImg nav"
-    "webPersonals secondImg second second nav"
-    "webPersonals third third thirdImg nav"
-    "webPersonals slogan blog MNTN nav"
-    ;
-    grid-template-rows: 144px 811px 638.933px 638.933px 638.933px 638.933px;
-    grid-template-columns: 15.9% 22.1% 22.1% 22.1% 15.9%;
-}
-.header{
-    grid-area: header;
+    padding-top: 64px;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 1743px;
+    height: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0px;
-    padding-bottom: 75px;
-    padding-left: 30px;
-    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.76px;
+    color: #FFFFFF;
 }
-.info li{
+section{
+    position: absolute;
+    width: 950px;
+    height: 321px;
+    top: 287px;
+    left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+section:not(:last-child){
+    gap: 32px;
+}
+aside{
+    position: absolute;
+    margin: 359px 0px 80px 0px;
+    width: 173px;
+    height: 24px;
+    transform: rotate(90deg);
+    color: #FFFFFF;
+}
+.headerNav{
+    list-style: none;
+}
+.headerNav li{
     display: inline-block;
 }
-.info li:not(:last-child){
-    margin-right: 15px;
+.headerNav li:not(:first-child){
+    margin-left: 40px;
 }
-.accImg{
+.accLogo{
     position: absolute;
-    right: 70px;
-    top: 22px;
+    top: 64px;
+    right: 150px;
 }
-.personals{
-    grid-area: webPersonals;
-    padding-left: 20px;
-    padding-top: 22px;
-    writing-mode: vertical-lr;
+.hikingGuide{
+    position: static;
+    width: 316px;
+    height: 22px;
+    margin: 0px;
+    padding-left: 104px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 6px;
+    line-height: 22.05px;
+    color: #FBD784;
 }
-.frontPage{
-    grid-area: front;
-    text-align: left;
-    padding-left: 180px;
-    font-size: xx-large;
-    position: relative;
+.bePrepared{
+    position: static;
+    text-transform: capitalize;
+    margin: 0;
+    width: 950px;
+    height: 200px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100px;
+    color: #FFFFFF;
 }
-.downArrow{
+.scrollDown{
+    position: static;
+    margin: 0;
+    width: 126px;
+    height: 24px;
+    color: #FFFFFF;
+}
+.scrollDown img{
     position: absolute;
-    top: 278px;
-    left: 280px;
-}
-.nav{
-    grid-area: nav;
-    text-align: right;
-    padding-top: 4px;
-}
-.nav li{
-    list-style-type: none;
-    margin-bottom: 20px;
-}
-.firstStage{
-    grid-area: first;
-    padding-left: 200px;
-    padding-top: 100px;
-    color: rgb(211, 210, 208);
-    position: relative;
-}
-.firstArrow{
-    position: absolute;
-    bottom: 195px;
-    left: 290px;
-}
-.firstImage{
-    grid-area: firstImg;
-}
-.firstStageBackground{
-    position: absolute;
-    top: -200px;
+    top: 286px;
     left: 100px;
-    z-index: 0;
-    font-size: 200px;
-    color: rgba(44, 43, 90, 0.281);
 }
-.secondStage{
-    grid-area: second;
-    padding-left: 200px;
-    padding-top: 200px;
-    color: rgb(211, 210, 208);
-    position: relative;
-}
-.secondArrow{
+.Instagram{
     position: absolute;
-    bottom: 95px;
-    left: 290px;
+    transform: rotate(-90deg);
+    left: calc(77px + 24px);
+
 }
-.secondImage{
-    grid-area: secondImg;
-    text-align: right;
-    padding-top: 100px;
-}
-.secondStageBackground{
+.Twitter{
     position: absolute;
-    top: -100px;
-    left: 100px;
-    z-index: 0;
-    font-size: 200px;
-    color: rgba(44, 43, 90, 0.281);
+    transform: rotate(-90deg);
+    left: calc(77px + 24px + 24px + 24px);
 }
-.thirdStage{
-    grid-area: third;
-    padding-left: 200px;
-    padding-top: 200px;
-    color: rgb(211, 210, 208);
-    position: relative;
-}
-.thirdArrow{
+.slider{
     position: absolute;
-    bottom: 95px;
-    left: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    width: 208px;
+    height: 42px;
+    margin: 342px 0px 0px 1665px;
 }
-.thirdImage{
-    grid-area: thirdImg;
-    padding-top: 100px;
-}
-.thirdStageBackground{
+.main{
     position: absolute;
-    top: -90px;
-    left: 100px;
-    z-index: 0;
-    font-size: 200px;
-    color: rgba(44, 43, 90, 0.281);
-}
-.slogan{
-    grid-area: slogan;
-    padding-top: 150px;
-    padding-left: 50px;
-    color: rgb(211, 210, 208);
-}
-.slogan li{
-    list-style-type: none;
-}
-.moreBlog{
-    grid-area: blog;
-    padding-top: 150px;
-    padding-left: 250px;
-    color: rgb(211, 210, 208);
-}
-.moreBlog li{
-    list-style-type: none;
-}
-.moreBlog li:not(:last-child){
-    margin-bottom: 10px;
-}
-.moreBlog a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: rgb(211, 210, 208);
-}
-.moreBlog a:hover{
-    color: black;
-}
-.moreMNTN{
-    grid-area: MNTN;
-    padding-top: 150px;
-    padding-left: 250px;
-    color: rgb(211, 210, 208);
-}
-.moreMNTN li{
-    list-style-type: none;
-}
-.moreMNTN li:not(:last-child){
-    margin-bottom: 10px;
-}
-.moreMNTN a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: rgb(211, 210, 208);
-}
-.moreMNTN a:hover{
-    color: black;
-}
-.readMore{
-    color: rgb(126, 103, 1);
-}
-.readMore a{
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-    color: rgb(126, 103, 1);
-}
-.readMore a:hover{
-    color: rgb(214, 188, 71);
-}
-#copyright{
-    padding-top: 100px;
-    color: rgb(114, 114, 114);
-}
-#scrollDown{
-    font-size: medium;
+    width: 100%;
+    height: 3000px;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%) no-repeat,
+                url(../images/MG.png) no-repeat,
+                url(../images/HG.png) no-repeat, 
+                linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%) no-repeat,
+                url(../images/VG.png) no-repeat;
+    background-size: 100% 1200px, 
+                     100% 1422px,
+                     100% 1513px, 
+                     100% 700px,
+                     100% 926px;
+    background-position: top 0px left 0px, 
+                         top 462px left 0px,
+                         top -400px left 0px, 
+                         top 1500px left 0px,
+                         top 1165px left 0px;
 }
 
-@media only screen and (max-width: 1519.2px), screen and (max-height: 3355px) {
-    .pageBackground{
-        width: 100%;
-        background-image: url(../images/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: grid;
-        grid-template-areas: 
-        "header header header header header"
-        "webPersonals front front front nav"
-        "webPersonals first first firstImg nav"
-        "webPersonals secondImg second second nav"
-        "webPersonals third third thirdImg nav"
-        "webPersonals slogan blog MNTN nav"
-        ;
-        grid-template-rows: 50px 811px 700px 700px 700px 1fr;
-        grid-template-columns: 15.9% 22.1% 22.1% 22.1% 15.9%;
-    }
-    .header{
-        padding: 0px 20px;
-    }
-    .accImg{
-        top: 12px;
-        right: 90px;
-    }
-    .downArrow{
-        top: 277px;
-    }
-    .firstStage{
-        padding-top: 150px;
-        padding-left: 150px;
-        padding-right: 30px;
-    }
-    .firstArrow{
-        bottom: 56px;
-        left: 240px;
-    }
-    .firstStageBackground{
-        margin: 0;
-        top: 50px;
-        left: 60px;
-    }
-    .firstImage{
-        padding-top: 150px;
-    }
-    .secondStage{
-        padding-top: 130px;
-        padding-left: 70px;
-        padding-right: 150px;
-    }
-    .secondArrow{
-        left: 160px;
-    }
-    .secondStageBackground{
-        margin: 0;
-        top: 30px;
-        left: 5px;
-    }
-    .secondImage{
-        padding-top: 150px;
-    }
-    .thirdStage{
-        padding-top: 134px;
-        padding-left: 150px;
-        padding-right: 30px;
-    }
-    .thirdArrow{
-        bottom: 72px;
-        left: 240px;
-    }
-    .thirdStageBackground{
-        margin: 0;
-        top: 30px;
-        left: 60px;
-    }
-    .thirdImage{
-        padding-top: 150px;
-    }
-    .slogan{
-        padding-top: 100px;
-        padding-left: 30px;
-    }
-    .moreBlog{
-        padding-top: 95px;
-        padding-left: 100px;
-    }
-    .moreMNTN{
-        padding-top: 95px;
-        padding-left: 100px;
-    }
-}

@@ -6,104 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/CSS/visuals.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        @import url('http://fonts.cdnfonts.com/css/gilroy');
     </style>
-    <title>html - CSS projekt</title>
+    <title>MNTN - Landing Page</title>
 </head>
 <body>
-<div class="pageBackground">
-    <div class="header">
-        <p>MNTN</p>
-        <ul class="info">
-            <li><a href="#">Equipment</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-        <p><a href="#">Account</a></p>
-        <img class="accImg" src="assets/Logos/User account.png" alt="User logo" width="25px" height="25px">
-    </div>
-    <div class="personals">Follow us
-        <img src="assets/Logos/Instagram.png" alt="Instagram logo" width="25px" height="25px">
-        <img src="assets/Logos/Twitter.png" alt="Twitter logo" width="25px" height="25px">
-    </div>
-    <div class="frontPage">
-        <h3>A HIKING GUIDE</h3>
-        <h1>Be Prepared For The <br> Mountains And Beyond!</h1>
-        <p id="scrollDown">scroll down</p>
-        <img class="downArrow" src="assets/Logos/Down arrow.png" alt="Down arrow" width="20px" height="20px">
-    </div>
-    <div class="nav">
-        <ul>
-            <li>Start</li>
-            <li><a href="#01">01</a></li>
-            <li><a href="#02">02</a></li>
-            <li><a href="#03">03</a></li>
-        </ul>
-    </div>
-    <div class="firstStage">
-        <h3>GET STARTED</h3>
-        <p class="firstStageBackground" id="01">01</p>
-        <h2>What level of hiker <br> are you?</h2>
-        <p>Determining what level of hiker you are can be an important tool when<br>planning future hikes.
-            This hiking level guide will help you plan hikes<br>according to different hike ratings set by various
-            websites like All Trails and<br>Modern Hiker. What type of hiker are you - novice, moderate, advanced<br>moderate, expert, or expert backpacker?
+    <div class="main"></div>
+    <header>
+        <img class="logo" src="assets/Logos/Logo.svg" alt="logo SVG" width="108px" height="24px">
+        <nav>
+            <ul class="headerNav">
+                <li>Equipment</li>
+                <li>About us</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <p><img class="accLogo" src="assets/Logos/Account icon.png" alt="accIcon" width="24px" height="24px">Account</p>
+    </header>
+    <section>
+        <h3 class="hikingGuide">A HIKING GUIDE</h3>
+        <h1 class="bePrepared">Be prepared for the mountains and beyond!</h1>
+        <p class="scrollDown">scroll down<img src="assets/Miscellaneous/Down arrow.png" alt="down arrow" width="16px" height="24px"></p>
+    </section>
+    <aside class="social">
+        Follow us
+        <img class="Instagram" src="assets/Logos/Instagram.png" alt="Instagram" width="24px" height="24px">
+        <img class="Twitter" src="assets/Logos/Twitter.png" alt="Twitter" width="24px" height="24px">
+    </aside>
+    <aside class="slider">
+        <p class="frame">
+
         </p>
-        <p class="readMore"><a href="#">read more</a></p>
-        <img class="firstArrow" src="assets/Logos/Right arrow.png" alt="Right arrow" width="20px" height="20px">
-    </div>
-    <div class="firstImage"> <img src="assets/images/firstImg.png" alt="first image" width="100%" height="auto"> </div>
-    <div class="secondStage">
-        <h3>HIKING ESSENTIALS</h3>
-        <p class="secondStageBackground" id="02">02</p>
-        <h2>Picking the right <br> Hiking gear!</h2>
-        <p>The nice thing about beginning hiking is that you don't really need any 
-        <br>special gear, you can probably get away with things you already have.
-        <br>Let's start with clothing. A typical mistake hiking beginners make is wearing
-        <br>jeans and regular clothers, which will get heavy and chafe if they get sweaty or wet.
-        </p>
-        <p class="readMore"><a href="#">read more</a></p>
-        <img class="secondArrow" src="assets/Logos/Right arrow.png" alt="Right arrow" width="20px" height="20px">
-    </div>
-    <div class="secondImage"> <img src="assets/images/secondImg.png" alt="second image" width="100%" height="auto"> </div>
-    <div class="thirdStage">
-        <h3>WHERE YOU GO IS THE KEY</h3>
-        <p class="thirdStageBackground" id="03">03</p>
-        <h2>Understand Your <br> Map & Timing</h2>
-        <p>To start, print out the hiking guide and map. If it's raining, throw them in a 
-        <br>Zip-Lock bag. Read over the guide, study the map, and have a good idea
-        <br>of what to expect. I like to know what my next landmark is as I hike. For
-        <br>example, I'll read the guide and know that say, in a mile, I make a right turn
-        <br>at the junction...
-        </p>
-        <p class="readMore"><a href="#">read more</a></p>
-        <img class="thirdArrow" src="assets/Logos/Right arrow.png" alt="Right arrow" width="20px" height="20px">
-    </div>
-    <div class="thirdImage"> <img src="assets/images/thirdImg.png" alt="third image" width="100%" height="auto"> </div>
-    <div class="slogan">
-        <ul>
-            <li><h1>MNTN</h1></li>
-            <li>Get out there & discover your next<br>slope, mountain & destination!</li>
-            <li id="copyright">Copyright 2019 MNTN, Inc. Terms & Privacy</li>
-        </ul>
-    </div>
-    <div class="moreBlog">
-        <ul>
-            <li><h4>More on The Blog</h4></li>
-            <li><a href="#">About MNTN</a></li>
-            <li><a href="#">Contributors & Writers</a></li>
-            <li><a href="#">Write For Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-    </div>
-    <div class="moreMNTN">
-        <ul>
-            <li><h4>More on MNTN</h4></li>
-            <li><a href="#">The Team</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Press</a></li>
-        </ul>
-    </div>
-</div>
+    </aside>
 </body>
 </html>
