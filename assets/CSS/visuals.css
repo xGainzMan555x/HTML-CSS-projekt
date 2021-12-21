@@ -10,6 +10,12 @@ div{
 p{
     margin: 0;
 }
+h3{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
 header{
     position: relative;
     padding-top: 64px;
@@ -38,6 +44,17 @@ section{
 }
 section:not(:last-child){
     gap: 32px;
+}
+footer{
+    width: 1462px;
+    height: 280px;
+    position: absolute;
+    top: 4200px;
+    left: 229px;
+    display: flex;
+    flex-direction: row;
+    gap: 212px;
+    align-items: flex-start;
 }
 .headerNav{
     list-style: none;
@@ -73,7 +90,7 @@ section:not(:last-child){
     height: 2px;
     left: 0px;
     top: 10px;
-    background: #FBD784;;
+    background: #FBD784;
 }
 .bePrepared{
     position: static;
@@ -102,13 +119,11 @@ section:not(:last-child){
     position: absolute;
     transform: rotate(-90deg);
     left: calc(77px + 24px);
-    z-index: 1;
 }
 .Twitter{
     position: absolute;
     transform: rotate(-90deg);
     left: calc(77px + 24px + 24px + 24px);
-    z-index: 1;
 }
 .social{
     position: absolute;
@@ -131,7 +146,7 @@ section:not(:last-child){
     top: 0px;
 }
 .frame{
-    position: absolute;
+    position: static;
     width: 42px;
     height: 208px;
     padding: 0px;
@@ -140,6 +155,8 @@ section:not(:last-child){
     align-items: flex-end;
     color: #FFFFFF;
     gap: 40px;
+    padding-right: 32px;
+    padding-top: calc((240px - 208px) / 2);
 }
 .main{
     position: absolute;
@@ -148,44 +165,67 @@ section:not(:last-child){
     background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%) no-repeat,
                 url(../images/MG.png) no-repeat,
                 url(../images/HG.png) no-repeat, 
-                linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 41.5%) no-repeat,
+                linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 19%) no-repeat,
                 url(../images/VG.png) no-repeat;
-    background-size: 100% 1200px, 
-                     100% 1422px,
-                     100% 1513px, 
-                     100% 4400px,
-                     100% 926px;
+    background-size: cover 1200px, 
+                     cover 1422px,
+                     cover 1513px, 
+                     cover 100%,
+                     cover 926px;
     background-position: top 0px left 0px, 
                          top 462px left 0px,
                          top -400px left 0px, 
-                         top 270px left 0px,
+                         top 1200px left 0px,
                          top 1165px left 0px;
 }
 .content{
     position: absolute;
     padding: 0px;
     width: 1462px;
-    height: calc(3040px - 280px);
+    height: 2760px;
     top: 1440px;
     margin: 0px 229px 0px 229px;
     display: flex;
     flex-direction: column;
     gap: 200px;
 }
-.item{
-    width: 1462px;
+.content-item{
+    width: 100%;
     height: 720px;
     display: flex;
     flex-direction: row;
     gap: 114px;
 }
 .stage{
-    width: calc(1462px - 566px -114px);
+    position: relative;
+    width: calc(632px + 150px);
     height: 720px;
 }
 .background-number{
-    width: 240px;
-    height: 240px;
+    padding: 38px 0px 0px 0px;
+    z-index: -1;
+}
+.text-title{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.8px;
+    color: #FFFFFF;
+}
+.text-paragraph{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.read-more{
+    font-size: 18px;
+    line-height: 22px;
+    color: #FBD784;
+}
+.right-arrow{
+    position: absolute;
+    top: 422px;
+    left: 103px;
 }
 .text{
     position: absolute;
@@ -193,8 +233,65 @@ section:not(:last-child){
     height: 439px;
     top: 141px;
     left: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
 }
-.image{
+.item-image{
     width: 566px;
     height: 720px;
+}
+.yellow-text{
+    padding: 0px 0px 0px 96px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+.yellow-text::before{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 72px;
+    height: 2px;
+    left: 0px;
+    top: 10px;
+    background: #FBD784;
+}
+.logo{
+    width: 108px;
+    height: 24px;
+}
+.link-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+    margin-bottom: 24px;
+}
+.links{
+    list-style: none;
+    margin: 0;
+}
+.link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.link:not(:last-child){
+    margin-bottom: 16px;
+}
+.MNTN{
+    flex-grow: 2;
+}
+#copyright{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-top: 122px;
 }
