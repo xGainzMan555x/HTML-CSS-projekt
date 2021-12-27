@@ -29,8 +29,9 @@ h1 {
 .content {
     margin: 0;
     width: 100%;
-    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%);
-    background-size: cover;
+    background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+                linear-gradient(180deg, rgba(11, 29, 38, 0) 30%, #0B1D26 40%);
+    background-size: cover, cover;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(1em, auto);
@@ -131,14 +132,14 @@ aside {
     padding-top: 17rem;
 }
 #instagram {
-    position: absolute;
-    top: 10.5%;
-    left: 4%;
+    position: relative;
+    top: 14%;
+    left: 17%;
 }
 #twitter {
-    position: absolute;
-    top: 11.5%;
-    left: 4%;
+    position: relative;
+    top: 20%;
+    left: 11.5%;
 }
 /* scroll bar children*/
 .scroll-bar-levels {
@@ -149,26 +150,26 @@ aside {
 }
 .scroll-bar-levels li {
     font-size: 1.125em;
+    text-align: right;
+    padding-right: 7rem;
 }
 .scroll-bar-levels li:not(:last-child) {
     margin-bottom: 2.5em;
 }
 .slider {
-    position: absolute;
-    top: 7.8%;
-    right: 5%;
+    position: relative;
+    top: -31%;
+    left: 40%;
 }
 /* main content grid */
 .main-content {
     grid-column: 1 / 13;
     margin-top: 52em;
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 10%);
-    background-size: cover;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-auto-rows: minmax(1em, auto);
     row-gap: 12.5em;
-    z-index: -2;
+    z-index: 0;
 }
 /* main content children */
 .stage {
@@ -193,7 +194,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 /* stage children */
 .background-number {
@@ -252,7 +253,6 @@ footer {
 .more-blog {
     list-style: none;
     margin: 0;
-    padding-left: 4em;
 }
 .more-blog li:not(.footer-yellow-text) {
     font-weight: 500;
