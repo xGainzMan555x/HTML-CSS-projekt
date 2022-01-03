@@ -1,3 +1,16 @@
+/* Fonts */
+@font-face {
+    font-family: chronicle;
+    src: url(../Fonts/Chronicle\ Display\ Black.otf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Questrial;
+    src: url(../Fonts/Questrial-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 /* Initialising the body */
 body {
     position: absolute;
@@ -8,6 +21,9 @@ body {
                 url(../images/MG.png) no-repeat top -31.6% left 0%,
                 url(../images/VG.png) no-repeat top -124.4% left 0%;
     background-size: cover, cover, cover;
+}
+.sr-only {
+    display: none;
 }
 /* element resets */
 p {
@@ -24,6 +40,16 @@ h3 {
 }
 h1 {
     margin: 0;
+}
+button {
+    margin: 0;
+}
+.acc-logo2 {
+    display: none;
+    margin: 0;
+}
+.mobile-social {
+    display: none;
 }
 /* main grid */
 .content {
@@ -45,11 +71,13 @@ header {
     justify-content: space-between;
     align-items: center;
     color: white;
+    font-family: Questrial;
 }
 article {
     margin: 0;
     grid-column: 2 / 12;
     color: white;
+    font-family: Questrial;
 }
 aside {
     color: white;
@@ -57,10 +85,12 @@ aside {
 .social {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    font-family: Questrial;
 }
 .scroll-bar {
     grid-column: 12 / 13;
     grid-row: 2 / 3;
+    font-family: Questrial;
 }
 /* header classes */
 .mntn {
@@ -89,9 +119,12 @@ aside {
     right: 9em;
     top: 4em;
 }
+.mobile-nav {
+    display: none;
+}
 /* article children */
 .page-title {
-    padding: 12.375em 17em 0 4em;
+    padding: 12.375rem 15rem 0 22rem;
 }
 .page-title h3, h1{
     margin-bottom: 2rem;
@@ -100,6 +133,7 @@ aside {
     font-weight: 800;
     font-size: 1.125em;
     letter-spacing: 0.375em;
+    line-height: 1.5em;
     text-transform: uppercase;
     color: #fbd784;
 }
@@ -113,7 +147,7 @@ aside {
     margin-bottom: 0.2rem;
 }
 .title {
-    font-weight: 600;
+    font-family: chronicle;
     font-size: 5.5em;
     text-transform: capitalize;
 }
@@ -123,23 +157,24 @@ aside {
 }
 /* social children */
 #follow {
+    position: relative;
     margin: 0;
     width: 8.5ch;
     font-weight: 700;
     font-size: 1.125em;
     transform: rotate(90deg);
-    padding-left: 23.4rem;
-    padding-top: 17rem;
+    top: 42.5%;
+    left: 28%;
 }
 #instagram {
     position: relative;
-    top: 14%;
-    left: 17%;
+    top: 50%;
+    left: 49.5%;
 }
 #twitter {
     position: relative;
-    top: 20%;
-    left: 11.5%;
+    top: calc(50% + (50% - 42.5%));
+    left: 34.5%;
 }
 /* scroll bar children*/
 .scroll-bar-levels {
@@ -170,6 +205,7 @@ aside {
     grid-auto-rows: minmax(1em, auto);
     row-gap: 12.5em;
     z-index: 0;
+    font-family: Questrial;
 }
 /* main content children */
 .stage {
@@ -193,7 +229,6 @@ footer {
     margin-right: 13em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
 }
 /* stage children */
@@ -211,13 +246,14 @@ footer {
 }
 /* text children */
 .text-title {
-    width: 19ch;
+    width: 15ch;
     font-weight: 600;
     font-size: 4em;
     color: white;
+    font-family: chronicle;
 }
 .paragraph {
-    width: 65ch;
+    width: 60ch;
     font-weight: 700;
     font-size: 1.125em;
     line-height: 1.7em;
@@ -233,6 +269,9 @@ footer {
     padding-top: 0.3rem;
 }
 /* footer children */
+footer > p {
+    width: 35ch;
+}
 .footer-yellow-text {
     font-weight: 700;
     font-size: 1.5em;
@@ -253,6 +292,7 @@ footer {
 .more-blog {
     list-style: none;
     margin: 0;
+    padding-left: 36.55%;
 }
 .more-blog li:not(.footer-yellow-text) {
     font-weight: 500;
@@ -266,6 +306,7 @@ footer {
 .more-mntn {
     list-style: none;
     margin: 0;
+    padding-left: 14.5%;
 }
 .more-mntn li:not(.footer-yellow-text) {
     font-weight: 500;
@@ -275,4 +316,326 @@ footer {
 }
 .more-mntn li:not(:last-child) {
     margin-bottom: 1rem;
+}
+/* laptop compatibilty */
+@media screen and (max-width: 1520px) {
+    .content {
+        background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 30%, #0B1D26 36.8%);
+    }
+    .page-title {
+        padding: 8.5rem 0 0 10rem;
+    }
+    #follow {
+        top: 37%;
+        left: 36%;
+    }
+    #instagram {
+        top: 45%;
+        left: 62.8%;
+    }
+    #twitter {
+        top: 52%;
+        left: 44%;
+    }
+    .scroll-bar-levels {
+        padding-top: 13rem;
+    }
+    .slider {
+        top: -34%;
+    }
+    .stage {
+        margin-left: 4rem;
+        margin-right: 5rem;
+    }
+    .right-arrow {
+        padding-top: 0.1rem;
+    }
+    footer {
+        margin-left: 4rem;
+        margin-right: 5rem;
+    }
+    .more-blog {
+        padding-left: 35.5%;
+    }
+    .more-mntn {
+        padding-left: 12.4%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .content {
+        background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 30%, #0B1D26 33.4%);
+    }
+    .page-title {
+        padding: 5rem 0 0 6rem;
+    }
+    #follow {
+        top: 31%;
+        left: 45%;
+    }
+    #instagram {
+        top: 40%;
+        left: 78%;
+    }
+    #twitter {
+        top: calc(40% + (40% - 31%));
+        left: 55%;
+    }
+    .scroll-bar-levels {
+        padding-top: 9.5rem;
+    }
+    .main-content {
+        margin-top: 25em;
+    }
+    .background-number {
+        padding-top: 0;
+    }
+    .text {
+        padding-left: 6.5rem;
+        padding-top: 5rem;
+    }
+    .text-title {
+        width: 11ch;
+    }
+    .paragraph {
+        width: 50ch;
+    }
+    .more-blog {
+        padding-left: 31.7%;
+    }
+    .more-mntn {
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .content {
+        background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 15%, #0B1D26 19.9%);
+    }
+    .main-content {
+        margin-top: 20em;
+    }
+    .stage {
+        grid-column: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        gap: 7.125em;
+        margin-left: 10em;
+        margin-right: 0;
+    }
+    .paragraph {
+        width: 55ch;
+    }
+    .stage-image {
+        width: 50%;
+        padding-left: 9.2rem;
+        order: 2;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content {
+        background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 10%, #0B1D26 14.9%);
+    }
+    .mntn {
+        padding: 2em 0 0 3.8em;
+    }
+    .account {
+        display: none;
+    }
+    .acc-logo2 {
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        display: block;
+        top: 0.584%;
+        left: 85%;
+    }
+    .nav-div {
+        position: fixed;
+        padding: 0;
+        inset: 0 0 0 30%;
+        padding: 8rem 0 0 0.1rem;
+        background: rgba(11, 29, 38, 0.9);
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 400ms ease-in-out;
+    }
+    @supports (backdrop-filter: blur(1rem)){
+        .nav-div {
+            backdrop-filter: blur(1rem);
+        }
+    }
+    .nav-div[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    .navigation li {
+        display: block;
+    }
+    .navigation li:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+    .mobile-nav {
+        position: absolute;
+        display: block;
+        right: 5%;
+        top: 0.51%;
+        background: url(../Miscellaneous/menu-icon.png) no-repeat;
+        background-size: cover;
+        width: 2rem;
+        aspect-ratio: 1;
+        z-index: 100;
+        border: 0;
+    }
+    .social {
+        display: none;
+    }
+    .mobile-social {
+        display: block;
+        font-family: Questrial;
+        font-weight: 700;
+        font-size: 1.125em;
+        padding: 4rem 0 0 2.5rem;
+    }
+    #mobile-instagram {
+        position: relative;
+        left: 7%;
+    }
+    #mobile-twitter {
+        position: relative;
+        left: 14%;
+    }
+    .scroll-bar-levels {
+        display: none;
+    }
+    .slider {
+        top: 25%;
+    }
+    article {
+        grid-column: 1/12;
+    }
+    .page-title{
+        padding: 4rem 0 0 4rem;
+    }
+    .main-content {
+        margin-top: 8rem;
+    }
+    .stage {
+        margin-left: 5rem;
+    }
+    .yellow-text {
+        width: 35ch;
+    }
+    .paragraph {
+        width: 45ch;
+    }
+    footer {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .slogan {
+        order: 3;
+    }
+    .more-blog {
+        padding-left: 38%;
+        order: 1;
+    }
+    .more-mntn{
+        padding-left: 38%;
+        order: 2;
+    }
+}
+@media screen and (max-width: 481px) {
+    body {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: url(../images/HG.png) no-repeat top 63.8% left 28%,
+                    url(../images/MG.png) no-repeat top -10% left 28%,
+                    url(../images/VG.png) no-repeat top -91.4% left 28%;
+    }
+    .content {
+        background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 10%, #0B1D26 23%);
+    }
+    .mntn {
+        padding-left: 2rem;
+    }
+    .acc-logo2 {
+        left: 80%;
+    }
+    .page-title {
+        font-size: 80%;
+        padding: 2rem 0 0 2rem;
+    }
+    .main-content {
+        margin-top: 40rem;
+    }
+    .stage {
+        margin-left: 1rem;
+    }
+    .stage-image {
+        padding-left: 7rem;
+    }
+    .text {
+        padding-left: 2rem;
+    }
+    .text-title {
+        width: 10ch;
+    }
+    .paragraph {
+        width: 38ch;
+    }
+    footer {
+        margin-left: 1rem;
+        margin-right: 0rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .content {
+        background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 15%, #0B1D26 21%);
+    }
+    .acc-logo2 {
+        left: 68%;
+    }
+    .mobile-nav {
+        left: 81%;
+    }
+    .title {
+        font-size: 420%;
+    }
+    .yellow-text {
+        width: 28ch;
+    }
+    .slider {
+        display: none;
+    }
+    .main-content {
+        margin-top: 30rem;
+    }
+    .stage-image {
+        padding-left: 4rem;
+    }
+    .text {
+        padding-left: 1rem;
+    }
+    .text-title {
+        width: 8ch;
+        font-size: 300%;
+    }
+    .paragraph {
+        width: 25ch;
+    }
+    .more-blog {
+        padding-left: 15%;
+    }
+    .more-mntn {
+        padding-left: 15%;
+    }
+    .slogan p {
+        width: 29ch;
+    }
 }
