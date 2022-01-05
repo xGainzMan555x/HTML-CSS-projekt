@@ -292,7 +292,7 @@ footer > p {
 .more-blog {
     list-style: none;
     margin: 0;
-    padding-left: 36.55%;
+    padding-left: 19%;
 }
 .more-blog li:not(.footer-yellow-text) {
     font-weight: 500;
@@ -306,7 +306,7 @@ footer > p {
 .more-mntn {
     list-style: none;
     margin: 0;
-    padding-left: 14.5%;
+    padding-left: 14.1%;
 }
 .more-mntn li:not(.footer-yellow-text) {
     font-weight: 500;
@@ -321,7 +321,7 @@ footer > p {
 @media screen and (max-width: 1520px) {
     .content {
         background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
-        linear-gradient(180deg, rgba(11, 29, 38, 0) 30%, #0B1D26 36.8%);
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 30%, #0B1D26 36.5%);
     }
     .page-title {
         padding: 8.5rem 0 0 10rem;
@@ -356,7 +356,7 @@ footer > p {
         margin-right: 5rem;
     }
     .more-blog {
-        padding-left: 35.5%;
+        padding-left: 16.8%;
     }
     .more-mntn {
         padding-left: 12.4%;
@@ -385,6 +385,9 @@ footer > p {
     .scroll-bar-levels {
         padding-top: 9.5rem;
     }
+    .slider {
+        top: -36.5%;
+    }
     .main-content {
         margin-top: 25em;
     }
@@ -402,16 +405,16 @@ footer > p {
         width: 50ch;
     }
     .more-blog {
-        padding-left: 31.7%;
+        padding-left: 18%;
     }
     .more-mntn {
-        padding-left: 5%;
+        padding-left: 5.2%;
     }
 }
 @media screen and (max-width: 1025px) {
     .content {
         background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
-        linear-gradient(180deg, rgba(11, 29, 38, 0) 15%, #0B1D26 19.9%);
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 15%, #0B1D26 19.7%);
     }
     .main-content {
         margin-top: 20em;
@@ -434,9 +437,18 @@ footer > p {
     }
 }
 @media screen and (max-width: 768px) {
+    body {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: url(../images/HG.png) no-repeat top 100% left 28%,
+                    url(../images/MG.png) no-repeat top 0% left 28%,
+                    url(../images/VG.png) no-repeat top -76% left 28%;
+    }
     .content {
         background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 150%),
-        linear-gradient(180deg, rgba(11, 29, 38, 0) 10%, #0B1D26 14.9%);
+        linear-gradient(180deg, rgba(11, 29, 38, 0) 20%, #0B1D26 25%);
     }
     .mntn {
         padding: 2em 0 0 3.8em;
@@ -519,7 +531,7 @@ footer > p {
         padding: 4rem 0 0 4rem;
     }
     .main-content {
-        margin-top: 8rem;
+        margin-top: 50rem;
     }
     .stage {
         margin-left: 5rem;
@@ -591,6 +603,12 @@ footer > p {
     footer {
         margin-left: 1rem;
         margin-right: 0rem;
+    }
+    .more-blog {
+        padding-left: 28%;
+    }
+    .more-mntn {
+        padding-left: 28%;
     }
 }
 @media screen and (max-width: 320px) {
